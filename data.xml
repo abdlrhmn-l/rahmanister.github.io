@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<daftar>
+	<anggota>
+		<nama>Duta Modjo</nama>
+		<bagian>CEO</bagian>
+	</anggota>
+	<anggota>
+		<nama>Abdul Rahman</nama>
+		<bagian>Android Developer</bagian>
+	</anggota>
+	<anggota>
+		<nama>Dandy Pramudya</nama>
+		<bagian>Database Administrator</bagian>
+	</anggota>
+	<anggota>
+		<nama>Muhammad Hanif</nama>
+		<bagian>Networks Administrator</bagian>
+	</anggota>
+</daftar>

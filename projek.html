@@ -1,0 +1,737 @@
+<!DOCTYPE html PUBLIC “-//W3c//DTD XHTML 1.0 Transitional//EN”
+
+“http://www.w3c.org/TR/xhtml1/DTD/xhtml1-traditional.dtd”>
+<html>
+<head>
+  <title>IchiDev</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="main.css" />
+  
+ <!-- <link href="style.css" rel="stylesheet" />-->
+ <style type="text/css">
+ /* animasi */
+ div{
+  display: block;
+}
+@keyframes fadeInUp {
+0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0);
+}
+
+100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+}
+}  
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container:before, .container:after {
+    content: " ";
+    display: table;
+}
+.inner:before, .inner:after {
+    content: " ";
+    display: table;
+}
+
+
+
+ html,body{
+  height: 100%
+  width: 100%;
+ }
+ .navbar{
+    padding : 1% 0;
+    background-color: #000000;
+    font-size: 1.2em;
+ }
+
+ .navbar-brand{
+    min-height: 30px;
+    padding: 0 15px 5px;
+ }
+
+.navbar-default .navbar-nav li a{
+  color:#939393 ;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+.navbar-default .navbar-nav li a:hover,.navbar-default .navbar-nav li a.active{
+  color:#FFF;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#home{
+  background: url(img/bck.jpg) no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  padding: 55px;
+  padding-bottom: 10px; 
+}
+.wrapper{
+  background: url(img/bck.jpg) no-repeat center center fixed;
+   display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  padding-bottom: 10px;
+}
+
+.special h2,.special p{
+  color: white;
+}
+
+.landing-text{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.landing-text a{
+  text-decoration: none;
+  font-size: 50px;
+  font-family: Rainbow Bridge Personal Use;
+font-weight: bold;
+}
+.landing-text a,.landing-text h3{
+  color: white;
+}
+
+.content .icon{
+  color: black;
+}
+
+.padding {
+  padding: 50px 0;
+  background-color: #000;
+}
+
+.padding p,.padding h2{
+  color: white;
+}
+
+.padding p{
+  font-size: 17px;
+  color: white;
+}
+
+.padding img{
+  margin-right: 0;
+  margin-left: 50px;
+width: 60%;
+}
+footer{
+background-color: #000;
+width: 100%;
+padding: 5% 5% 2% 5%;
+}
+
+footer .fa{
+padding: 15px;
+font-size: 25px;
+color: #939393;
+text-decoration: none;
+}
+
+footer .icon{
+  max-width: 200px;
+}
+
+footer h3,footer h4,footer a{
+  font-weight: bold;
+  color: white;
+}
+
+footer .fa:hover{
+text-decoration: none;
+color: white;
+}
+
+.container1{
+  width: 100%;
+  background-color: black;
+  display: table;
+  position: relative;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+.stat {
+  padding-top: 0;
+   margin:50px auto;
+   text-align:center;
+}
+.highlight {
+   color:#FFF;
+   padding:20px 0;
+   font-weight:bold;
+   display:block;
+   overflow:hidden;
+   margin-bottom:0;
+   font-size:48px;
+}
+
+.stat .milestone-details{
+  color: white;
+}
+
+.stat i {
+  color:#FFF;
+}
+.milestone-details {
+   font-weight:bold;
+   font-size:18px;
+   color:#999;
+}
+.team-section {
+    display: block;
+     background: url(img/bck.jpg) no-repeat center center fixed;
+    padding-bottom: 90px;
+}
+.section {
+    padding: 120px 0;
+}
+.team-item .social-media ul li {
+}
+.social-media > ul > li {
+    list-style: none;
+    display: inline-block;
+}
+.team-item .social-media ul li a {
+    display: block;
+    text-align: center;
+    opacity: 1;
+    padding: 0;
+}
+.team-item .social-media ul li a {
+    display: block;
+    text-align: center;
+    opacity: 1;
+    padding: 0;
+}
+.social-media > ul > li > a {
+    padding: 0 10px;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.team-item .social-media ul {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+}
+.team-item .social-media {
+    background: #000;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    position: absolute;
+    top: 0;
+    margin-top: 0;
+    z-index: 999;
+    top: -87px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.social-media {
+    opacity: 0;
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+}
+.team-item:hover .social-media {
+    top: 0px;
+    opacity: 1;
+}
+.team-item .caption {
+    background: #000 ;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+}
+
+.caption {
+    display: block;
+    overflow: hidden;
+}
+.caption p{
+  font-size: 21px;
+    display: block;
+    overflow: hidden;
+}
+.social-media > ul {
+    margin: 0;
+    padding: 0;
+}
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.team-item > a {
+    display: block;
+    text-align: center;
+}
+a:hover, a:focus {
+    text-decoration: none;
+    color: #01090C;
+}
+a:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+a:hover, a:focus {
+    color: #23527c;
+    text-decoration: underline;
+}
+a:active, a:hover {
+    outline: 0;
+}
+.team-item:hover img {
+
+    position: relative;
+    top: 85px;
+}
+.team-item img {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    position: relative;
+    top: 0;
+    display: inline-block;
+}
+a img {
+    border: none;
+    vertical-align: bottom;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
+.container2{
+  height: 396; 
+  width:255;
+}
+.team-item .social-media ul li a i {
+    color: #fff !important;
+    opacity: 1;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    padding: 8px 0;
+}
+.social-media > ul > li > a > .fa {
+    font-size: 18px;
+    color: #fefefe;
+    opacity: 0.31;
+}
+.social-media .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.title-section {
+    text-align: center;
+}
+.title-section p{
+  font-size: 17px;
+  color: white;
+}
+.title-section h2{
+  color: white;
+}
+.title-section {
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: auto;
+    margin-bottom: 80px;
+}
+h5{
+  color: white;
+}
+ </style>
+}
+}
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+       <span class="sr-only">Toggle navigation</span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+     </button>
+     <a class="navbar-brand" href="#"><img src="img/ichidev1.png"></a>
+    </div>   
+    <div class="collapse navbar-collapse" id="navbar-collapse-main">
+      <ul class="nav navbar-nav navbar-right">
+        <li> <a class="active" href="projek.html">Home</a></li>
+        <li> <a href="ProjekPortFolio.html">Portfolio</a></li>
+        <li> <a href="projekContact.html">Contact Us</a></li>
+      </ul>
+    </div>  
+  </div>
+</nav>
+
+<div id="home">
+    <div class="landing-text animate-box fadeInUp animated">
+      <a>Ichi Dev</a>
+      <h3>Perusahaan Software House dengan Programmer terbaik</h3>
+    </div>
+</div>
+
+<div class="padding">
+<div class="container">
+    <div class="row animate-box fadeInUp animated">
+      <div class="col-sm-5">
+        <img src="img/service.png" class="img">
+      </div>
+      <div class="col-sm-5 text-center special">
+        <h2>Melayani dan Mencapai Impian Anda</h2>
+        <p class="lead">Kami menyadari dalam pembuatan software atau aplikasi, baik desktop maupun mobile selain koding yang rapi dan ringkas agar sistem berjalan optimal, juga diperlukan design yang menawan, sehingga programmer kami bekerjasama dengan tim kreatif terbaik agar dapat menghasilkan solusi yang segar, brilian, dan mengejutkan</p>
+      </div>
+    </div>
+</div>
+</div>
+
+
+<section class="wrapper">
+        <div class="inner animate-box fadeInUp animated">
+          <header class="special col-xs-4 col-sm-8 col-md-12">
+            <h2>Our Service</h2>
+            <p>Kami adalah perusahaan berbasis IT (Software House), Software House kami saat ini telah memiliki 3 cabang yaitu Software House Jakarta, Software House Jogja, dan software House Surabaya dengan amunisi para programmer muda profesional yang memiliki passion yang sama untuk mengembangkan industri digital, fokus kami adalah pembuatan / pengembangan Software baik berbentuk Web Based, maupun mobile apps seperti Android dan IOS. Kami tidak menjual produk jadi, karena kami percaya bahwa masing masing perusahaan ataupun perorangan memiliki kebutuhannya masing masing terkait aplikasi yang akan dibuat, sehingga kami memfokuskan diri dalam jasa pembuatan software untuk memenuhi semua kebutuhan yang ada. Akhir kata, silahkan kontak kami melalui telp, sms ataupun whatsapp, dan kami akan memastikan bahwa kebutuhan anda akan software atau aplikasi akan terpenuhi.</p>
+          </header>
+          <div class="highlights">
+            
+            <section>
+              <div class="content col-xs-4 col-sm-8 col-md-12">
+                <header>
+                  <a href="#" class="icon fa-desktop fa-4x"><span class="label">Icon</span></a>
+                  <h3>Web Apps</h3>
+                </header>
+                <p>Website Personal, Website Komunitas, Company Profile, Online Store, Sistem Informasi, Sistem Informasi Geografis, Web Apps, Otomasi Laporan, Data Integrasi, War Room, Interactive Apps, dll.</p>
+              </div>
+            </section>
+            <section>
+              <div class="content col-xs-4 col-sm-8 col-md-12">
+                <header>
+                  <a href="#" class="icon fa-line-chart fa-4x"><span class="label">Icon</span></a>
+                  <h3>Startup Apps</h3>
+                </header>
+                <p>Anda ingin memiliki Bisnis Startup seperti Traveloka, Tokopedia, Bukalapak, dll? namun di sisi lain anda tidak memiliki programmer dan tim kreatif? Segera hubungi kami dan kami akan membantu mewujudkan impian anda</p>
+              </div>
+            </section>
+            <section>
+              <div class="content col-xs-4 col-sm-8 col-md-12">
+                <header>
+                  <a href="#" class="icon fa-mobile-phone fa-4x"><span class="label">Icon</span></a>
+                  <h3>Mobile Apps</h3>
+                </header>
+                <p>Sistem perusahaan anda masih desktop base? kami dapat membuat versi mobilenya, mulai dari aplikasi laporan, hingga transaksional, baik aplikasi android maupun IOS</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+  <div class="container1">
+    <div class="stat animate-box fadeInUp animated">
+            <div class="col-md-4 col-xs-12 ">
+                <div class="milestone-counter">
+                    <i class="fa fa-trophy fa-3x"></i>
+                    <span class="stat-count highlight">400</span>
+                    <div class="milestone-details">Project</div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <div class="milestone-counter">
+                    <i class="fa fa-user fa-3x"></i>
+                    <span class="stat-count highlight">320</span>
+                    <div class="milestone-details">Personal Clients</div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <div class="milestone-counter">
+                    <i class="fa fa-bank fa-3x"></i>
+                    <span class="stat-count highlight">100</span>
+                    <div class="milestone-details">Corporate Client</div>
+                </div>
+            </div>
+    </div><!-- stat -->
+  </div>
+
+<div class="section team-section" id="team">
+<div class="container">
+<div class="row">
+  <div class="title-section fadeInUp animated animated">
+    <h2>
+      Our Team
+    </h2>
+    <p>
+      Berikut adalah Ichi Dev team software dan networks
+    </p>
+  </div>
+</div>
+<div class="row">
+<div class="col-md-3 col-sm-6">
+<div class="container2">
+  <div class="team-item wow fadeInUp animated animated" data-wow-delay="0.4s" style="visibility: visible;-webkit-animation-delay: 0.4s; -moz-animation-delay: 0.4s; animation-delay: 0.4s">
+    <div class="social-media">
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fa fa-facebook"></i>
+          </a> 
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-twitter"></i>
+          </a> 
+        </li>
+      </ul>
+    </div>
+     <a href="">
+            <img src="img/duta2.png" class="img-responsive" width="255" height="396" alt>
+      </a>
+      <div class="caption">
+        <p class="xml"></p>
+        <p class="xml"></p>
+      </div>
+  </div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="container2">
+  <div class="team-item wow fadeInUp animated animated" data-wow-delay="0.4s" style="visibility: visible;-webkit-animation-delay: 0.4s; -moz-animation-delay: 0.4s; animation-delay: 0.4s">
+    <div class="social-media">
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fa fa-facebook"></i>
+          </a> 
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-twitter"></i>
+          </a> 
+        </li>
+      </ul>
+    </div>
+     <a href="">
+            <img src="img/gue.jpg" class="img-responsive" width="255" height="224" alt>
+      </a>
+      <div class="caption">
+        <p class="xml"></p>
+        <p class="xml"></p>
+      </div>
+  </div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="container2">
+  <div class="team-item wow fadeInUp animated animated" data-wow-delay="0.4s" style="visibility: visible;-webkit-animation-delay: 0.4s; -moz-animation-delay: 0.4s; animation-delay: 0.4s">
+    <div class="social-media">
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fa fa-facebook"></i>
+          </a> 
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-twitter"></i>
+          </a> 
+        </li>
+      </ul>
+    </div>
+     <a href="">
+            <img src="img/gue2.jpg" class="img-responsive" width="255" height="396" alt>
+      </a>
+      <div class="caption">
+        <p class="xml"></p>
+        <p class="xml"></p>
+      </div>
+  </div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="container2">
+  <div class="team-item wow fadeInUp animated animated" data-wow-delay="0.4s" style="visibility: visible;-webkit-animation-delay: 0.4s; -moz-animation-delay: 0.4s; animation-delay: 0.4s">
+    <div class="social-media">
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fa fa-facebook"></i>
+          </a> 
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-twitter"></i>
+          </a> 
+        </li>
+      </ul>
+    </div>
+     <a href="">
+            <img src="img/bayu.jpg" class="img-responsive" width="255" height="396" alt>
+      </a>
+      <div class="caption">
+        <p class="xml"></p>
+        <p class="xml"></p>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="container-fluid text-center">
+  <div class="row animate-box fadeInUp animated">
+    <div class="col-sm-4">
+      <h3>Contact Us</h3>
+      <h4>0895332151170</h4>
+      <br>
+      <h4>Our address and contact info here</h4>
+      <h5>vila dago alam asri 3 tangsel</h5>
+    </div>
+    <div class="col-sm-4">
+      <h3>Connect</h3>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+    </div>
+    <div class="col-sm-4">
+      <img src="" class="icon">
+    </div>
+  </div>
+</footer>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script src="bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+
+   $(document).ready(function(){
+
+
+  (function($) {
+    "use strict";
+    function count($this){
+    var current = parseInt($this.html(), 10);
+    current = current + 1; /* Where 50 is increment */  
+   $this.html(++current);
+      if(current > $this.data('count')){
+        $this.html($this.data('count'));
+      } else {    
+      setTimeout(function(){count($this)}, 50);
+      }
+    }         
+    $(".stat-count").each(function() {
+      $(this).data('count', parseInt($(this).html(), 10));
+      $(this).html('0');
+      count($(this));
+    });
+   })(jQuery);
+
+
+  });
+   </script>
+   <script type="text/javascript">
+  function loadXMLDoc(docXML){
+    if (window.XMLHttpRequest)
+      var xhttp = new XMLHttpRequest();
+    else
+      var xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+
+    xhttp.open("GET",docXML,false);
+    xhttp.send();
+
+    return xhttp.responseXML;
+  }
+
+  var docXML = loadXMLDoc("data.xml");
+
+  document.getElementsByClassName("xml")[0].innerHTML= docXML.getElementsByTagName("nama")[0].childNodes[0].nodeValue;
+   document.getElementsByClassName("xml")[1].innerHTML= docXML.getElementsByTagName("bagian")[0].childNodes[0].nodeValue;
+     document.getElementsByClassName("xml")[2].innerHTML= docXML.getElementsByTagName("nama")[1].childNodes[0].nodeValue;
+   document.getElementsByClassName("xml")[3].innerHTML= docXML.getElementsByTagName("bagian")[1].childNodes[0].nodeValue;
+     document.getElementsByClassName("xml")[4].innerHTML= docXML.getElementsByTagName("nama")[2].childNodes[0].nodeValue;
+   document.getElementsByClassName("xml")[5].innerHTML= docXML.getElementsByTagName("bagian")[2].childNodes[0].nodeValue;
+     document.getElementsByClassName("xml")[6].innerHTML= docXML.getElementsByTagName("nama")[3].childNodes[0].nodeValue;
+   document.getElementsByClassName("xml")[7].innerHTML= docXML.getElementsByTagName("bagian")[3].childNodes[0].nodeValue;
+  
+</script>
+
+
+</body>
+
+<!--- iOS Landing Page Fix
+<section>
+	<div class="landing-text">
+		<h1>BOOTSTRAP</h1>
+		<h3>Learn the basic building blocks.</h3>
+		<a href="#" class="btn btn-default btn-lg">Get Started</a>
+	</div>
+	<div class="home-wrap">
+        <div id="home">
+		</div>
+    </div>
+</section>
+-->
+
+<!--- iOS Fixed Image Fix
+<figure>
+	<div class="fixed-wrap">
+        <div id="fixed">
+		</div>
+    </div>
+</figure>
+-->
+
+</html>

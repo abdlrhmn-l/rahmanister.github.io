@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IchiDev</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="main.css" />
+  
+ <!-- <link href="style.css" rel="stylesheet" />-->
+ <style type="text/css">
+
+ html,body{
+  height: 100%
+  width: 100%;
+ }
+ .navbar{
+    padding : 1% 0;
+    background-color: #000000;
+    font-size: 1.2em;
+ }
+
+ .navbar-brand{
+    min-height: 30px;
+    padding: 0 15px 5px;
+ }
+
+.navbar-default .navbar-nav li a{
+  color:#939393 ;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+.navbar-default .navbar-nav li a:hover,.navbar-default .navbar-nav li a.active{
+  color:#FFF;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+ </style>
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+       <span class="sr-only">Toggle navigation</span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+     </button>
+     <a class="navbar-brand" href="#"><img src="img/ichidev1.png"></a>
+    </div>   
+    <div class="collapse navbar-collapse" id="navbar-collapse-main">
+      <ul class="nav navbar-nav navbar-right">
+        <li> <a class="active" href="#">Home</a></li>
+        <li> <a href="#">Team</a></li>
+        <li> <a href="#">Portfolio</a></li>
+      </ul>
+    </div>  
+  </div>
+</nav>
+
+<div id="home">
+    <div class="landing-text">
+      <a>Ichi Dev</a>
+      <h3>Perusahaan Software House dengan Programmer terbaik</h3>
+    </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Contact Us</h3>
+      <br>
+      <h4>Our address and contact info here</h4>
+    </div>
+    <div class="col-sm-4">
+      <h3>Connect</h3>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+    </div>
+    <div class="col-sm-4">
+      <img src="" class="icon">
+    </div>
+  </div>
+</footer>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script src="bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+
+   $(document).ready(function(){
+    var i = 0;
+  
+    function slideShow(){
+      
+
+      if (i==$('.img').length)
+        i=0;
+
+      $('.img').hide();
+      $('.img').eq(i++).fadeIn();
+    
+    setTimeout(slideShow,3000);
+  }
+  
+  slideShow();
+
+  (function($) {
+    "use strict";
+    function count($this){
+    var current = parseInt($this.html(), 10);
+    current = current + 1; /* Where 50 is increment */  
+   $this.html(++current);
+      if(current > $this.data('count')){
+        $this.html($this.data('count'));
+      } else {    
+      setTimeout(function(){count($this)}, 50);
+      }
+    }         
+    $(".stat-count").each(function() {
+      $(this).data('count', parseInt($(this).html(), 10));
+      $(this).html('0');
+      count($(this));
+    });
+   })(jQuery);
+
+
+  });
+   </script>
+
+</body>
+
+<!--- iOS Landing Page Fix
+<section>
+	<div class="landing-text">
+		<h1>BOOTSTRAP</h1>
+		<h3>Learn the basic building blocks.</h3>
+		<a href="#" class="btn btn-default btn-lg">Get Started</a>
+	</div>
+	<div class="home-wrap">
+        <div id="home">
+		</div>
+    </div>
+</section>
+-->
+
+<!--- iOS Fixed Image Fix
+<figure>
+	<div class="fixed-wrap">
+        <div id="fixed">
+		</div>
+    </div>
+</figure>
+-->
+
+</html>
